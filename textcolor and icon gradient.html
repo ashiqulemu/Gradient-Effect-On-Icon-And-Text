@@ -1,0 +1,40 @@
+ 
+ 
+<head>
+
+<style>
+
+     @mixin iconGradient($deg,$first-color,$last-color){
+
+          background: linear-gradient($deg, $first-color, $last-color);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -moz-background-clip:text;
+          -webkit-text-fill-color: transparent;
+          -moz-webkit-text-fill-color:transparent ;
+          -ms-webkit-text-fill-color:transparent ;
+          -o-webkit-text-fill-color: transparent;
+          -khtml-webkit-text-fill-color:transparent ;
+           webkit-text-fill-color:transparent ;
+    }
+
+ 
+  
+  .text{
+    
+       background:grey;
+       @include iconGradient(177deg, #ff0b0b 50%, blue 50%);
+       height:25px;
+       width:220px;
+       font-size:25px;
+    }
+
+</style>
+
+</head>
+
+ <div class="text">
+    
+    ASHIQUL ISLAM EMU  
+    
+  </div>
